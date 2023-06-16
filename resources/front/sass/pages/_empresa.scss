@@ -1,0 +1,205 @@
+#empresa {
+    .mvv-card {
+        .icon {
+            color: $primary;
+            @include linear-rfs(3rem, 5rem, 375px, 1920px, "max-width");
+        }
+    }
+
+    .gallery-wrapper {
+        @include media-breakpoint-up(lg) {
+            float: right;
+        }
+    }
+
+    .text-company {
+
+        @media(min-width: 1600px) {
+            width: 75% !important;
+        }
+
+        @media(min-width: 1200px) {
+            width: 80%;
+        }
+    }
+}
+
+.empresa-swiper,
+.equipe-swiper {
+    .swiper-pagination-bullet-active {
+        --swiper-theme-color:
+            white !important;
+        background: white !important;
+        border: none !important;
+    }
+
+    .swiper-pagination-bullet {
+        border: 1px solid white;
+        background: none;
+        opacity: 1;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+
+        @media(max-width: 767px) {
+            margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 5px);
+        }
+
+        .card {}
+    }
+}
+
+.border-lg-start {
+    @media(max-width: 992px) {
+        border-top: 1px solid white;
+    }
+
+
+    @media(min-width: 992px) {
+        border-left: 1px solid white;
+    }
+}
+
+.card {
+    &:hover {
+
+        img {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .position-conteudo {
+            bottom: 17px;
+            transition: bottom 0.3s ease-in-out;
+
+            .redes-card {
+                transition: visibility 0.3s ease-in-out;
+                visibility: visible;
+                // display: block;
+            }
+        }
+    }
+
+    img {
+        transform: scale(1.0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .position-conteudo {
+        bottom: -55px;
+
+        @media(max-width: 992px) {
+            bottom: 17px;
+        }
+
+        left: 5%;
+        transition: bottom 0.3s ease-in-out;
+
+        .redes-card {
+            transition: visibility 0.3s ease-in-out;
+            visibility: hidden;
+
+            @media(max-width: 992px) {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.card {
+    &:hover {
+
+        img {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .position-conteudo-blog {
+            bottom: 17px;
+            transition: bottom 0.3s ease-in-out;
+
+            .redes-card {
+                transition: visibility 0.3s ease-in-out;
+                visibility: visible;
+                // display: block;
+            }
+        }
+    }
+
+    img {
+        transform: scale(1.0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .position-conteudo-blog {
+        bottom: -30px;
+
+        @media(max-width: 992px) {
+            bottom: 17px;
+        }
+
+        left: 5%;
+        transition: bottom 0.3s ease-in-out;
+
+        .redes-card {
+            transition: visibility 0.3s ease-in-out;
+            visibility: hidden;
+
+            @media(max-width: 992px) {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.card-detalhe {
+    .position-conteudo {
+        bottom: 17px;
+
+        @media(max-width: 992px) {
+            bottom: 17px;
+        }
+
+        left: 23%;
+        transition: bottom 0.3s ease-in-out;
+
+        .redes-card {
+            transition: visibility 0.3s ease-in-out;
+            visibility: hidden;
+
+            @media(max-width: 992px) {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.svg-empresa {
+    @media(max-width: 1600px) {
+        left: -5%;
+    }
+
+    @media(max-width: 1400px) {
+        left: -8%;
+    }
+
+    @media(max-width: 1250px) {
+        left: -12%;
+    }
+
+    @media(max-width: 1200px) {
+        display: none;
+    }
+}
+
+.width-mobile {
+    width: 150px;
+    height: 150px;
+
+    @media(max-width: 576px) {
+        width: 100px;
+        height: 100px;
+    }
+}

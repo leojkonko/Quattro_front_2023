@@ -1,0 +1,128 @@
+.banner-swiper {
+    .swiper-pagination {
+        right: var(--swiper-pagination-right, 70px);
+        bottom: var(--swiper-pagination-bottom, -2px);
+        transform: rotate(90deg);
+    }
+
+    .swiper-pagination-bullet-active {
+        --swiper-theme-color:
+            white !important;
+        background: white !important;
+        border: none !important;
+    }
+
+    .swiper-pagination-bullet {
+        border: 1px solid white;
+        background: none;
+        opacity: 1;
+    }
+
+    .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: var(--swiper-pagination-bullet-vertical-gap, 15px) 0;
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset, 0px);
+        right: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset, 30px);
+        left: auto;
+    }
+}
+
+.imoveis-swiper {
+    .swiper-pagination-bullet-active {
+        --swiper-theme-color:
+            $dark !important;
+        background: $dark !important;
+        border: none !important;
+    }
+
+    .swiper-pagination-bullet {
+        border: 1px solid $dark;
+        background: none;
+        opacity: 1;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+    }
+
+}
+
+.locacoes-swiper,
+.comparar-swiper {
+    .swiper-pagination-bullet-active {
+        --swiper-theme-color:
+            $dark !important;
+        background: $dark !important;
+        border: none !important;
+    }
+
+    .swiper-pagination-bullet {
+        border: 1px solid $dark;
+        background: none;
+        opacity: 1;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+
+        @media(max-width: 767px) {
+            margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 5px);
+        }
+    }
+}
+
+#compra {
+    display: none;
+}
+
+#comprar {
+    .show {
+        display: block !important;
+    }
+}
+
+.fundo-img {
+    background: linear-gradient(0deg, #202020 17.19%, rgba(32, 32, 32, 0) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.fundo-black {
+    background-color: #202020;
+    transition: background-color 0.3s ease-in-out;
+    //animation: fade-in 0.5s ease;
+    //animation-fill-mode: forwards;
+}
+
+.btn-outline-dark:hover {
+    background-color: white;
+    color: initial;
+}
+
+.img-effect {
+    height: 120% !important;
+    transition: height 0.3s ease-in-out;
+}
+
+.img-effect {
+    /* Estilos da classe img-effect 
+    border: 10px solid gold;
+    background-color: red;
+    color: white;*/
+}
+
+.top-custom-banner {
+    @media(min-width: 1200px) and (max-width: 1300px) {
+        top: 45%;
+    }
+}
