@@ -1,5 +1,5 @@
 
-    <section class="banner ratio ratio-6x9 ratio-md-16x9 ratio-xl-21x9 overflow-hidden">
+    <section class="banner ratio ratio-6x9 ratio-md-16x9 ratio-lg-48 ratio-xxl-21x9 overflow-hidden">
         <div class="banner-swiper">
             <div class="swiper-wrapper">
                 @foreach (range(0,2) as $banner)
@@ -78,7 +78,7 @@
             {{--mobile--}}
             <div class="position-absolute w-100 start-50 translate-middle-x container bottom-0 z-index-1 d-none d-lg-block" >
                 <div class="position-absolute bottom-0 w-100 start-50 translate-middle-x" id="infos">
-                    <ul class="nav nav-pills" id="pills-tab" role="tablist" data-aos="zoom-out-down">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist" >
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
                             Home
@@ -98,7 +98,7 @@
                                     @foreach (range(0,4) as $banner)
                                     <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
                                         <select name="" id="" class="form-select my-2">
-                                            <option value="">opção 1</option>
+                                            <option value="">Tipo do imóvel</option>
                                         </select>
                                     </div>
                                     @endforeach
@@ -116,7 +116,7 @@
                                     @foreach (range(0,4) as $banner)
                                     <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
                                         <select name="" id="" class="form-select my-2">
-                                            <option value="">opção 1</option>
+                                            <option value="">Tipo do imóvel</option>
                                         </select>
                                     </div>
                                     @endforeach

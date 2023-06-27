@@ -9,29 +9,31 @@
                 <div class="row">
                     @foreach (range(0,4) as $image)
                         <div class="col-lg-4 col-md-6 col-12 mt-2" data-aos="zoom-out-up">
-                            <div class="ratio ratio-80" style="--bs-aspect-ratio: 80%;">
-                                <img class="w-100 h-100 object-fit-cover" src="{{ asset("front/images/backgrounds/casa-home.png") }}" alt="" title="">
-                                <div class="bottom-0 start-0 z-index-1" id="fundo_img"></div>
-                                <div class="z-index-2 start-0 top-0" style="left: 3%; top:3%;">
-                                    <button class="btn-dark btn fs-12 fw-400 rounded-0 me-0-50">Vendas</button>
-                                    <button class="btn-light btn fs-12 fw-400 rounded-0">AAA0001</button>
+                            <a href="{{ asset("front/images/backgrounds/casa-home.png") }}" data-fancybox="gallery">
+                                <div class="ratio ratio-80" style="--bs-aspect-ratio: 80%;">
+                                    <img class="w-100 h-100 object-fit-cover" src="{{ asset("front/images/backgrounds/casa-home.png") }}" alt="" title="">
+                                    <div class="bottom-0 start-0 z-index-1" id="fundo_img"></div>
+                                    <div class="z-index-2 start-0 top-0" style="left: 3%; top:3%;">
+                                        <button class="btn-dark btn fs-12 fw-400 rounded-0 me-0-50">Vendas</button>
+                                        <button class="btn-light btn fs-12 fw-400 rounded-0">AAA0001</button>
+                                    </div>
+                                    <div class="z-index-2" style="left: 3%; top:91%;">
+                                        <p class="fs-16 fw-400 text-white">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_205_889)">
+                                                <path d="M6 9V18H15M9 13L12 9.5L14.5 12M15 10L18 13M18 6H9V15H18V6Z" stroke="white"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_205_889">
+                                                <rect width="24" height="24" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                            15                                
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="z-index-2" style="left: 3%; top:91%;">
-                                    <p class="fs-16 fw-400 text-white">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_205_889)">
-                                            <path d="M6 9V18H15M9 13L12 9.5L14.5 12M15 10L18 13M18 6H9V15H18V6Z" stroke="white"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_205_889">
-                                            <rect width="24" height="24" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                        15                                
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                             <div class="">
                                 <div class="position-relative z-index-3" id="fundo_black">
                                     <div class="px-1 pb-1">
@@ -61,7 +63,7 @@
                                                     </button>
                                                 </a>
                                                 <button id="comprar" class="btn btn-outline-dark fs-16 fw-400 rounded-0 d-flex">
-                                                    Comprar
+                                                    Comparar
                                                     <span class="rounded-circle text-white ms-0-50" id="compra" style="background: #808080;width: 20px;height: 20px;font-size:10px"></span>
                                                 </button>
                                             </div>

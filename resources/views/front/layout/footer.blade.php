@@ -144,12 +144,15 @@
 
 {{-- GSAP (caso necessário) --}}
 {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script> --}}
-
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 {{-- Front js --}}
 @vite(['resources/front/js/vendors/bootstrap.bundle.min.js', 'resources/front/js/main.js'])
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 @livewireScripts
 <script>
+    $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
   </script>
   <script>
     var botaoComprar = document.querySelectorAll("#comprar");
@@ -206,12 +209,14 @@ imagemEffectList.forEach(function(element) {
 
 function addImgEffect(element) {
     element.classList.add('img-effect');
+    element.classList.remove('img-effect-disabled');
     element.nextElementSibling.classList.add('img-effect');
     //console.log('Mouse sobre o elemento');
 }
 
 function removeImgEffect(element) {
     element.classList.remove('img-effect');
+    element.classList.add('img-effect-disabled');
     element.nextElementSibling.classList.remove('img-effect');
     //console.log('Mouse fora do elemento');
 }

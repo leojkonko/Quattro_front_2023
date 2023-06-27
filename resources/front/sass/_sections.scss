@@ -1,10 +1,12 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 main {
     position: relative;
     z-index: 3;
+    overflow-x: hidden;
 }
 
 .fs-48 {
@@ -51,9 +53,9 @@ main {
     font-size: 18px;
     line-height: 26px;
 
-    @media(max-width:992px) {
+    @media(max-width:1400px) {
         font-size: 16px;
-        line-height: 22px;
+        line-height: 21px;
     }
 }
 
@@ -78,7 +80,8 @@ main {
 
 .text-decoration-none {
     &:hover {
-        color: $secondary;
+        color: #cfc4c4;
+        //--bs-text-opacity: 0 !important;
     }
 }
 

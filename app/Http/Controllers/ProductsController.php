@@ -14,9 +14,9 @@ class ProductsController extends Controller
 
         $alternates
             ->setAlternates('products')
-            ->pushBreadCrumb('Produtos', route_lang('products'))
-            ->setBreadTitle('Produtos')
-            ->setTitle('Produtos')
+            ->pushBreadCrumb('Imóveis', route_lang('products'))
+            ->setBreadTitle('Imóveis')
+            ->setTitle('Imóveis')
             ->setDescriptionIfNotEmpty($products->getPage()->description)
             ->setKeywordsIfNotEmpty($products->getPage()->keywords);
 
@@ -52,9 +52,9 @@ class ProductsController extends Controller
 
         $alternates
             ->setAlternates('products')
-            ->pushBreadCrumb('Produtos', route_lang('products'))
-            ->setBreadTitle('Produtos')
-            ->setTitle('Produtos')
+            ->pushBreadCrumb('Imóveis', route_lang('products'))
+            ->setBreadTitle('Imóveis')
+            ->setTitle('Imóveis')
             ->setDescriptionIfNotEmpty($products->getPage()->description)
             ->setKeywordsIfNotEmpty($products->getPage()->keywords);
 

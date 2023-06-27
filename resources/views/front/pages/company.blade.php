@@ -6,10 +6,12 @@
 <div class="position-absolute top-0 start-0" id="infos"></div>
         <section class="mt-2">
             <div class="ratio ratio-lg-32 ratio-md-16x9 ratio-1x1" data-aos="fade-left">
-                <svg data-aos="fade-left" class="position-absolute start-50 top-50 translate-middle z-index-2 width-mobile" style="" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="position-absolute start-50 top-50 translate-middle z-index-2 width-mobile" style="" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M80 160C124.183 160 160 124.183 160 80C160 35.8172 124.183 0 80 0C35.8172 0 0 35.8172 0 80C0 124.183 35.8172 160 80 160ZM60 114.641L120 80L60 45.359L60 114.641Z" fill="white"/>
                 </svg>                    
-                <img class="w-100 h-100 object-fit-cover" data-aos="fade-right" src="{{ asset("front/images/backgrounds/company.png") }}" alt="">
+                <a href="{{ asset("front/images/backgrounds/company.png") }}" data-fancybox="gallery">
+                    <img class="w-100 h-100 object-fit-cover" data-aos="fade-right" src="{{ asset("front/images/backgrounds/company.png") }}" alt="">
+                </a>
                 <img class="start-0 top-50 translate-middle-y z-index-2 svg-empresa" style="width: 580px !important;" src="{{ asset("front/images/backgrounds/sombra-company.svg") }}" alt="">                                 
             </div>
         </section>
@@ -130,7 +132,7 @@
                 </div>
             </div>
         </section>
-        <section class="py-lg-4 py-2 bg-dark position-relative">
+        <section class="py-lg-4 py-2 bg-dark position-relative mt-0">
             <svg class="position-absolute top-0 start-0" width="642" height="381" viewBox="0 0 642 381" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="132.117" y="-637.293" width="719" height="719" transform="rotate(45 132.117 -637.293)" stroke="#808080"/>
             </svg>   

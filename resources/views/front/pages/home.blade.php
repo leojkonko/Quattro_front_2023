@@ -71,12 +71,12 @@
                         @foreach (range(0,6) as $image)
                             <div class="d-block swiper-slide" data-aos="zoom-out-up">
                                 <div class="">
-                                    <div class="ratio ratio-80" style="--bs-aspect-ratio: 80%;">
-                                        <div class="w-100 h-100 z-index-1 imagem-effect" style="background: #202020;
+                                    <div class="ratio ratio-80 ratio-principal" style="--bs-aspect-ratio: 80%;">
+                                        <div class="w-100 h-100 z-index-1 imagem-effect-bg" style="background: #202020;
                                         opacity: 0.6;" id="imagem-effect"></div>
-                                        <img class="object-fit-cover w-100 h-100  efeito-img" id="" src="{{ asset("front/images/backgrounds/casa.png") }}" alt="">
+                                        <img class="object-fit-cover w-100 h-100  efeito-img imagem-effect" id="" src="{{ asset("front/images/backgrounds/casa.png") }}" alt="">
                                         <div class="div-conteudo">
-                                            <img class="position-absolute top-50 start-50 translate-middle z-index-1" width="50px" src="{{ asset("front/images/backgrounds/icone.svg") }}" alt="">
+                                            <img class="position-absolute top-50 start-50 translate-middle z-index-1 img-icone" width="50px" src="{{ asset("front/images/backgrounds/icone.svg") }}" alt="">
                                             <h2 class="position-absolute top-50 start-50 translate-middle z-index-1 mt-3 fs-32 fw-600 text-white">
                                                 Casas
                                             </h2>

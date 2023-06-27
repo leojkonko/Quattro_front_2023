@@ -4,7 +4,7 @@
         <input type="text" placeholder="Nome*" class="form-control" wire:model.defer="name" required>
     </div>
     <div class="col-lg-12">
-        <input type="email" placeholder="Email*" class="form-control" wire:model.defer="email" required>
+        <input type="email" placeholder="E-mail*" class="form-control" wire:model.defer="email" required>
     </div>
     <div class="col-lg-12">
         <input type="text" placeholder="Telefone*" class="form-control mask-telefone" wire:model.defer="phone" required>

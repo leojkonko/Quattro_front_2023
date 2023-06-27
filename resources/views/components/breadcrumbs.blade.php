@@ -39,7 +39,7 @@
     <div class="w-100 h-100 position-absolute top-0 start-0 z-index-1" style="background: linear-gradient(90deg, #202020 0%, rgba(32, 32, 32, 0) 100%);
         opacity: 0.7;"></div>
     <div class="col-lg-12 position-relative end-0 top-0 d-lg-block" >
-        <div class="ratio ratio-xl-32 ratio-lg-25 ratio-70 ratio-sm-21x9" style="">
+        <div class="ratio ratio-xl-42 ratio-xxl-32 ratio-lg-48 ratio-70 ratio-sm-21x9" style="">
             <img class="w-100 h-100 object-fit-cover" src="{{ asset("front/images/backgrounds/footer.png") }}" alt="">
             <div class="position-breadcrumb-products">
                 <div class="container">
@@ -85,24 +85,26 @@
                         <div class="ps-lg-3">
                             <div class="row">
                                 @foreach (range(0,4) as $banner)
-                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                                    <select name="" id="" class="form-select my-1">
-                                        <option value="">opção 1</option>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2 mb-1 d-flex justify-content-center">
+                                    <select name="" id="" class="form-select js-example-basic-multiple" name="states[]" multiple="multiple">
+                                        @foreach (range(0,4) as $banne2r)
+                                        <option value="">Tipo do imóvel</option>
+                                        @endforeach
                                     </select>
                                 </div>
                                 @endforeach
-                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2 mb-1 d-flex justify-content-center">
                                     
                                 </div>
                                 @foreach (range(0,4) as $banner)
-                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                                    <select name="" id="" class="form-select my-1">
-                                        <option value="">opção 1</option>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2 mb-1 d-flex justify-content-center pb-1">
+                                    <select name="" id="" class="form-select js-example-basic-multiple" name="states[]" multiple="multiple">
+                                        <option value="">Tipo do imóvel</option>
                                     </select>
                                 </div>
                                 @endforeach
-                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                                    <button class="btn btn-outline-light rounded-0 my-1">
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2 mb-1 d-flex justify-content-center pb-1">
+                                    <button class="btn btn-outline-light rounded-0">
                                         Buscar
                                     </button>
                                 </div>
@@ -114,8 +116,8 @@
                             <div class="row">
                                 @foreach (range(0,4) as $banner)
                                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                                    <select name="" id="" class="form-select my-1">
-                                        <option value="">opção 1</option>
+                                    <select name="" id="" class="form-select my-1 js-example-basic-multiple" name="states[]" multiple="multiple">
+                                        <option value="">Tipo do imóvel</option>
                                     </select>
                                 </div>
                                 @endforeach
@@ -124,8 +126,8 @@
                                 </div>
                                 @foreach (range(0,4) as $banner)
                                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                                    <select name="" id="" class="form-select my-1">
-                                        <option value="">opção 1</option>
+                                    <select name="" id="" class="form-select my-1 js-example-basic-multiple" name="states[]" multiple="multiple">
+                                        <option value="">Tipo do imóvel</option>
                                     </select>
                                 </div>
                                 @endforeach
@@ -151,13 +153,13 @@
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="pills-home-tab1" data-bs-toggle="pill" data-bs-target="#pills-home1" type="button" role="tab" aria-controls="pills-home1" aria-selected="true">
-                        Home
+                        Compra
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link position-relative" id="pills-profile-tab1" data-bs-toggle="pill" data-bs-target="#pills-profile1" type="button" role="tab" aria-controls="pills-profile1" aria-selected="false">
                             <div class="w-100 h-100  start-0 bottom-0 z-index-background"></div>
-                            <span class="position-relative opacity-1" style="opacity: 1">Profile</span>
+                            <span class="position-relative opacity-1" style="opacity: 1">Aluguel</span>
                         </button>
                     </li>
                   </ul>
@@ -168,7 +170,7 @@
                                 @foreach (range(0,4) as $banner)
                                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
                                     <select name="" id="" class="form-select my-2">
-                                        <option value="">opção 1</option>
+                                        <option value="">Tipo do imóvel</option>
                                     </select>
                                 </div>
                                 @endforeach
@@ -186,7 +188,7 @@
                                 @foreach (range(0,4) as $banner)
                                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
                                     <select name="" id="" class="form-select my-2">
-                                        <option value="">opção 1</option>
+                                        <option value="">Tipo do imóvel</option>
                                     </select>
                                 </div>
                                 @endforeach

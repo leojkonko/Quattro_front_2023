@@ -38,6 +38,21 @@ new Swiper(".gallery-swiper", {
         clickable: true,
     },
 });
+new Swiper(".imoveis-internos-swiper", {
+    rewind: false,
+    slidesPerView: 1,
+    spaceBetween: 1,
+    navigation: {
+        nextEl: ".imoveis-internos-swiper .swiper-button-next",
+        prevEl: ".imoveis-internos-swiper .swiper-button-prev",
+    },
+    pagination: {
+        el: ".imoveis-internos-swiper .swiper-pagination",
+        type: "bullets",
+        dynamicBullets: true,
+        clickable: true,
+    },
+});
 new Swiper(".empresa-swiper", {
     slidesPerView: 1,
     spaceBetween: 1,

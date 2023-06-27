@@ -114,6 +114,38 @@
     transition: height 0.3s ease-in-out;
 }
 
+.img-effect-disabled {
+    height: 100% !important;
+    transition: height 0.3s ease-in-out;
+}
+
+.ratio-principal {
+    &:hover {
+
+        & h2,
+        .img-icone,
+        .imagem-effect-bg {
+            height: 0px !important;
+            //display: none;
+            transition: height 0.5s ease-in-out;
+        }
+
+        & h2 {
+            display: none;
+        }
+
+        .efeito-img {
+            height: 120% !important;
+            transition: height 0.3s ease-in-out;
+        }
+    }
+
+    .efeito-img {
+        height: 100% !important;
+        transition: height 0.3s ease-in-out;
+    }
+}
+
 .img-effect {
     /* Estilos da classe img-effect 
     border: 10px solid gold;
@@ -122,7 +154,20 @@
 }
 
 .top-custom-banner {
-    @media(min-width: 1200px) and (max-width: 1300px) {
+    @media(min-width: 1200px) and (max-width: 1400px) {
         top: 45%;
+    }
+
+    top: 45% !important;
+}
+
+.btn-custom-dark {
+    background:
+        #808080;
+    opacity: 0.6;
+    color: white;
+
+    & span {
+        opacity: 1 !important;
     }
 }

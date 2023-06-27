@@ -40,8 +40,38 @@
             <div class="container container-end">
                 <div class="row ">
                     <div class="col-lg-6" data-aos="fade-left">
-                        <div class="ratio ratio-1x1 h-100">
-                            <img class="w-100 h-100 object-fit-cover" src="{{ asset("front/images/backgrounds/produto-detalhe.png") }}" alt="" title="">
+                        <div class="empresa-swiper swiper h-100">
+                            <div class="swiper-wrapper">
+                        
+                                @foreach (range(0,2) as $image)
+                                    <div class="d-block swiper-slide">
+                                        <a href="{{ asset("front/images/backgrounds/casa-home.png") }}" data-fancybox="gallery">
+                                            <div class="ratio ratio-1x1 h-100">
+                                                <svg class="position-absolute start-50 top-50 translate-middle z-index-2 width-mobile" style="width: initial; height: initial; top: initial: left: initial;" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M80 160C124.183 160 160 124.183 160 80C160 35.8172 124.183 0 80 0C35.8172 0 0 35.8172 0 80C0 124.183 35.8172 160 80 160ZM60 114.641L120 80L60 45.359L60 114.641Z" fill="white"/>
+                                                </svg>  
+                                                <img class="w-100 h-100 object-fit-cover" src="{{ asset("front/images/backgrounds/produto-detalhe.png") }}" alt="" title="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                @endforeach
+                        
+                            </div> 
+                            <div class="w-100 m-auto position-relative z-index-1 controle-banner" style="width: 200px; height: 100px;">
+                                <div class=" w-100 h-100 position-absolute" style="margin-top: -5rem;">
+                                    <div class="swiper-button-prev">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 10L4 10M4 10L10 16M4 10L10 4" stroke="white" stroke-linejoin="round"/>
+                                        </svg>                                                                                                                   
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 7L12 7M12 7L6 1M12 7L6 13" stroke="white" stroke-linejoin="round"/>
+                                        </svg>                                                                                                                                                                                      
+                                    </div>
+                                    <div class="swiper-pagination mb-2"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-right">
@@ -115,9 +145,14 @@
                             Uma residência exclusiva, meticulosamente projetada para oferecer o máximo em luxo e conforto. Essa casa de tirar o fôlego possui uma decoração sofisticada, móveis e acabamentos de alta qualidade, além de uma ampla variedade de comodidades e tecnologias modernas. Experimente o requinte e o estilo de vida excepcional neste oásis residencial, projetado para encantar os gostos mais exigentes.
                         </p>
                     </div>
-                    <div class="col-lg-12" data-aos="zoom-out-up">
-                        <select name="" id="" class="form-select form-select-white mt-1">
+                    <div class="col-6" data-aos="zoom-out-up">
+                        <select name="" id="" class="form-select form-select-white mt-1" disabled>
                             <option value="">Conheça o imóvel</option>
+                        </select>
+                    </div>
+                    <div class="col-6" data-aos="zoom-out-up">
+                        <select name="" id="" class="form-select form-select-white mt-1" disabled>
+                            <option value="">Empreendimento com</option>
                         </select>
                     </div>
                     <div class="d-flex gap-1" >
@@ -159,7 +194,7 @@
             <div class="container container-start">
                 <div class="row">
                     <div class="col-lg-8 py-2">
-                        <div class="p-lg-3 p-xl-4" data-aos="zoom-out-up">
+                        <div class="py-lg-3 py-xl-4 pe-lg-4 pe-2" data-aos="zoom-out-up">
                             <h2 class="fs-20 fw-600 text-white text-lg-start text-center w-100 mb-1">Onde você vai morar</h2>
                             <p class="fs-16 fw-400 text-white text-lg-start text-center">Onde você vai morar
 
@@ -179,7 +214,7 @@
                         <svg class="me-1"width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="1.5" y="10.5" width="12" height="12" transform="rotate(-45 1.5 10.5)" stroke="#808080" stroke-width="2"/>
                         </svg>                            
-                        Você também pode gostar
+                        VOCÊ TAMBÉM PODE GOSTAR
                         <svg class="ms-1"width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="1.5" y="10.5" width="12" height="12" transform="rotate(-45 1.5 10.5)" stroke="#808080" stroke-width="2"/>
                         </svg>  
