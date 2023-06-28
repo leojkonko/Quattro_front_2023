@@ -8,15 +8,43 @@
                         @foreach (range(0,4) as $product)
                             <div class="swiper-slide h-100">
                                 <div class="ratio ratio-80" style="--bs-aspect-ratio: 80%;">
+                                    <div class="z-index-2" style="left: 3%; top:91%;">
+                                        <p class="fs-16 fw-400 text-white">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_205_889)">
+                                                <path d="M6 9V18H15M9 13L12 9.5L14.5 12M15 10L18 13M18 6H9V15H18V6Z" stroke="white"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_205_889">
+                                                <rect width="24" height="24" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                            15                                
+                                        </p>
+                                    </div>
+                                    <div class="bottom-0 start-0 z-index-1" id="fundo_img"></div>
+                                    <div class="z-index-2 start-0 top-0" style="left: 3%; top:3%;">
+                                        <button class="btn-dark btn fs-12 fw-400 rounded-0 me-0-50">Vendas</button>
+                                        <button class="btn-light btn fs-12 fw-400 rounded-0">AAA0001</button>
+                                    </div>
                                     <img class="w-100 h-100 object-fit-cover" src="{{ asset("front/images/backgrounds/casa-home.png") }}" alt="" title="">
                                     
                                 </div>
                             </div>
                         @endforeach
+                        
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination swiper-pagination1 d-xs-flex d-sm-none d-md-none d-lg-none"></div>
+                    <div class="swiper-button-prev imoveis-internos-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 10L4 10M4 10L10 16M4 10L10 4" stroke="white" stroke-linejoin="round"/>
+                        </svg>                                
+                    </div>
+                    <div class="swiper-button-next imoveis-internos-button2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 10L16 10M16 10L10 4M16 10L10 16" stroke="white" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                 </div>
                 <div class="">
                     <div class="position-relative z-index-3" id="fundo_black">
@@ -61,12 +89,12 @@
     </div>
     <div class="w-100 m-auto position-relative z-index-1 controle-banner" style="width: 200px; height: 100px;margin-top: -10rem;margin-bottom: 7rem;">
         <div class=" w-100 h-100 position-absolute">
-            <div class="swiper-button-prev">
+            <div class="swiper-button-prev imoveis-swiper-button" style="z-index: 13">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 7L1 7M1 7L7 13M1 7L7 0.999999" stroke="#3C4C71" stroke-linejoin="round"/>
                 </svg>                                                                         
             </div>
-            <div class="swiper-button-next">
+            <div class="swiper-button-next imoveis-swiper-button2 style="z-index: 13"">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="#3C4C71" stroke-linejoin="round"/>
                 </svg>                                                                                                                                           

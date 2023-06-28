@@ -1,5 +1,5 @@
 
-    <section class="banner ratio ratio-6x9 ratio-md-16x9 ratio-lg-48 ratio-xxl-21x9 overflow-hidden">
+    <section class="banner ratio ratio-6x9 ratio-md-16x9 ratio-lg-60 rato-xl-48 ratio-xxl-21x9 overflow-hidden">
         <div class="banner-swiper">
             <div class="swiper-wrapper">
                 @foreach (range(0,2) as $banner)
@@ -44,7 +44,7 @@
                     </div>
                 @endforeach
             </div> 
-            <div class="position-absolute h-100 start-50 translate-middle-x container top-0 z-index-1 d-none d-lg-block" style="width: 50%;left: 75%">
+            <div class="position-absolute h-100 start-50 translate-middle-x container top-0 z-index-1 d-none d-lg-block banner-position" style="width: 50%;left: 75%">
                 <div class="position-absolute top-50 end-0 translate-middle-y" style="width: 200px; transform: rotate(90deg);">
                     <div class="swiper-button-prev" style="z-index: 13;">
                         <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@
             </div>
             {{--mobile--}}
             <div class="position-absolute w-100 h-100 start-50 translate-middle-x container top-0 z-index-1 d-lg-none">
-                <div class="position-absolute translate-middle-x" style="width: 200px;bottom: 22%;left:75%;">
+                <div class="position-absolute translate-middle-x" style="width: 200px;bottom: 22%;left:50%;">
                     <div class="swiper-button-prev" style="z-index: 13;">
                         <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M13 7L1 7M1 7L7 13M1 7L7 0.999999" stroke="white" stroke-linejoin="round"/>
@@ -96,12 +96,15 @@
                             <div class="ps-lg-3">
                                 <div class="row">
                                     @foreach (range(0,4) as $banner)
-                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                                        <select name="" id="" class="form-select my-2">
-                                            <option value="">Tipo do imóvel</option>
+                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2 mb-1 d-flex justify-content-center">
+                                        <select name="" id="" class="form-select js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Tipo do imóvel">
+                                            @foreach (range(0,4) as $banne2r)
+                                            <option value="opa">Tipo do imóvel</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                     @endforeach
+                                    
                                     <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
                                         <button class="btn btn-outline-light rounded-0 my-2">
                                             Buscar
@@ -114,9 +117,11 @@
                             <div class="ps-lg-3">
                                 <div class="row">
                                     @foreach (range(0,4) as $banner)
-                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                                        <select name="" id="" class="form-select my-2">
-                                            <option value="">Tipo do imóvel</option>
+                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2 mb-1 d-flex justify-content-center">
+                                        <select name="" id="" class="form-select js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Tipo do imóvel">
+                                            @foreach (range(0,4) as $banne2r)
+                                            <option value="opa">Tipo do imóvel</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                     @endforeach

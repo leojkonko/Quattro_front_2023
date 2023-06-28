@@ -171,3 +171,41 @@
         opacity: 1 !important;
     }
 }
+
+#main {
+    .select2-container--default .select2-selection--multiple {
+        margin-top: 10px;
+        border-bottom: 1px solid white;
+        border-radius: 0px;
+        font-family: $form-select-font-family;
+        @include font-size($form-select-font-size);
+        font-weight: $form-select-font-weight;
+        line-height: $form-select-line-height;
+    }
+
+    .select2-container {
+        border: none;
+    }
+}
+
+.banner-position {
+    width: 100%;
+
+    @media (min-width: 992px) {
+        width: 50%;
+        left: 75%
+    }
+
+    & .div-position {
+
+        @media (min-width: 992px) {
+            width: 200px;
+            transform: rotate(90deg);
+            top: 50%;
+        }
+
+        width: 200px;
+        bottom: 22%;
+        left:50%;
+    }
+}

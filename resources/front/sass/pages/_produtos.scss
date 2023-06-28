@@ -2,6 +2,7 @@
     border: none;
     border-bottom: 1px solid white;
     border-radius: 0px;
+
 }
 
 .select2-container--default .select2-selection--multiple {
@@ -13,46 +14,64 @@
     border-bottom: 1px solid white;
     border-radius: 0px;
     outline: none !important;
-    //background-image: url(../../../../public/front/images/icons/seta.svg);
 }
 
 .select2-container--default .select2-selection--multiple {
     border: none;
     background-image: url(../../../../public/front/images/icons/seta.svg);
+    //background-image: url("../../front/images/icons/seta.svg");
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 50%;
 
     &::after {
-        content: "Tipo do imóvel";
+        //content: "Tipo do imóvel";
         color: white;
         position: absolute;
         left: 0;
         z-index: 0;
     }
-}
 
-.select2-container--focus {
-    & .select2-container--default .select2-selection--multiple {
-        border: none;
-        background-image: url(../../../../public/front/images/icons/seta.svg);
-        background-repeat: no-repeat;
-        background-position-x: 100%;
-        background-position-y: 50%;
+    & textarea {
+        color: white;
+        //font-family: $form-select-font-family;
+        //font-size: 32px;
 
-        &::after {
-            content: "" !important;
-            color: white;
-            position: absolute;
-            left: 0;
-            z-index: 0;
-        }
     }
 }
 
 .form-select,
-.select2 .select2-selection:not(.select2-selection--multiple) .select2-selection__rendered {
-    //background-image: url(../../../../public/front/images/icons/seta.svg);
-}
+.select2 .select2-selection:not(.select2-selection--multiple) .select2-selection__rendered {}
 
 //select2 select2-container select2-container--default select2-container--below select2 select2-container select2-container--default select2-container--below select2-container--focus
+.div-form {
+    background-color: $dark;
+    padding: 0.5rem 2rem;
+
+    .form-control-dark {
+        height: 100%;
+        //@include linear-rfs(1.5rem, 2rem, 375px, 1920px, "padding");
+        display: flex;
+        //gap: 0.75rem;
+        background-color: $dark;
+        border-bottom: 1px solid white;
+        color: white;
+        width: 450px;
+
+        //box-shadow: $box-shadow-lg;
+        //border-radius: $border-radius-lg;
+        @media(max-width: 992px) {
+            width: 100%;
+        }
+
+        background-image: url(../../../../public/front/images/icons/lupa.svg);
+        //background-image: url("../../front/images/icons/lupa.svg");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 50%;
+
+        &::placeholder {
+            color: $secondary;
+        }
+    }
+}

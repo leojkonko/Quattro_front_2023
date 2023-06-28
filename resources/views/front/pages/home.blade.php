@@ -25,10 +25,12 @@
                             <div class="tab-pane fade show active bg-dark px-1" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab1">
                                 <div class="ps-lg-3">
                                     <div class="row">
-                                        @foreach (range(0,4) as $banner)
-                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                                            <select name="" id="" class="form-select my-2">
-                                                <option value="">opção 1</option>
+                                        @foreach (range(0,3) as $banner)
+                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2 mb-1 d-flex justify-content-center">
+                                            <select name="" id="" class="form-select js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Tipo do imóvel">
+                                                @foreach (range(0,4) as $banne2r)
+                                                <option value="opa">Tipo do imóvel</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                         @endforeach
@@ -43,12 +45,14 @@
                             <div class="tab-pane fade bg-dark px-1" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab1">
                                 <div class="ps-lg-3">
                                     <div class="row">
-                                        @foreach (range(0,4) as $banner)
-                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                                            <select name="" id="" class="form-select my-2">
-                                                <option value="">opção 1</option>
-                                            </select>
-                                        </div>
+                                        @foreach (range(0,3) as $banner)
+                                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2 mb-1 d-flex justify-content-center">
+                                                <select name="" id="" class="form-select js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Tipo do imóvel">
+                                                    @foreach (range(0,4) as $banne2r)
+                                                    <option value="opa">Tipo do imóvel</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
                                         @endforeach
                                         <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
                                             <button class="btn btn-outline-light rounded-0 my-2">

@@ -43,8 +43,8 @@ new Swiper(".imoveis-internos-swiper", {
     slidesPerView: 1,
     spaceBetween: 1,
     navigation: {
-        nextEl: ".imoveis-internos-swiper .swiper-button-next",
-        prevEl: ".imoveis-internos-swiper .swiper-button-prev",
+        nextEl: ".imoveis-internos-swiper .imoveis-internos-button",
+        prevEl: ".imoveis-internos-swiper .imoveis-internos-button2",
     },
     pagination: {
         el: ".imoveis-internos-swiper .swiper-pagination",
@@ -71,8 +71,8 @@ new Swiper(".imoveis-swiper", {
     slidesPerView: 1,
     spaceBetween: 15,
     navigation: {
-        nextEl: ".imoveis-swiper .swiper-button-next",
-        prevEl: ".imoveis-swiper .swiper-button-prev",
+        nextEl: ".imoveis-swiper .imoveis-swiper-button",
+        prevEl: ".imoveis-swiper .imoveis-swiper-button2",
     },
     pagination: {
         el: ".imoveis-swiper .swiper-pagination",

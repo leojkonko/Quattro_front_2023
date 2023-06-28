@@ -79,6 +79,11 @@
                             <span class="position-relative opacity-1" style="opacity: 1">Aluguel</span>
                         </button>
                     </li>
+                    <div class="ms-auto d-flex align-items-end">
+                        <div class="div-form">
+                            <input type="text" placeholder="Busque por nome ou código" class="form-control form-control-dark">
+                        </div>
+                    </div>
                   </ul>
                   <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active bg-dark" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -86,9 +91,9 @@
                             <div class="row">
                                 @foreach (range(0,4) as $banner)
                                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2 mb-1 d-flex justify-content-center">
-                                    <select name="" id="" class="form-select js-example-basic-multiple" name="states[]" multiple="multiple">
+                                    <select name="" id="" class="form-select js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Tipo do imóvel">
                                         @foreach (range(0,4) as $banne2r)
-                                        <option value="">Tipo do imóvel</option>
+                                        <option value="opa">Tipo do imóvel</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -98,8 +103,8 @@
                                 </div>
                                 @foreach (range(0,4) as $banner)
                                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2 mb-1 d-flex justify-content-center pb-1">
-                                    <select name="" id="" class="form-select js-example-basic-multiple" name="states[]" multiple="multiple">
-                                        <option value="">Tipo do imóvel</option>
+                                    <select name="" id="" class="form-select js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Tipo do imóvel">
+                                        <option value="opa">Tipo do imóvel</option>
                                     </select>
                                 </div>
                                 @endforeach
@@ -116,7 +121,7 @@
                             <div class="row">
                                 @foreach (range(0,4) as $banner)
                                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                                    <select name="" id="" class="form-select my-1 js-example-basic-multiple" name="states[]" multiple="multiple">
+                                    <select name="" id="" class="form-select my-1 js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Tipo do imóvel">
                                         <option value="">Tipo do imóvel</option>
                                     </select>
                                 </div>
@@ -126,7 +131,7 @@
                                 </div>
                                 @foreach (range(0,4) as $banner)
                                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                                    <select name="" id="" class="form-select my-1 js-example-basic-multiple" name="states[]" multiple="multiple">
+                                    <select name="" id="" class="form-select my-1 js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Tipo do imóvel">
                                         <option value="">Tipo do imóvel</option>
                                     </select>
                                 </div>

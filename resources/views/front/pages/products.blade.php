@@ -4,7 +4,7 @@
 
     <main id="produto" class="" style="background: #F0F0F0;overflow-x:hidden;">
 
-        <section class="py-lg-4 py-2">
+        <section class="py-lg-4 py-2 overflow-hidden">
             <div class="container">
                 <div class="row">
                     @foreach (range(0,4) as $image)

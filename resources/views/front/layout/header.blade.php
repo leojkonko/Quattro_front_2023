@@ -38,8 +38,23 @@
     <x-head-tags />
     @livewireStyles
 </head>
-
 <body>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body position-relative">
+            <div class="d-flex justify-content-center w-100 gap-4">
+                <x-site-menu />
+            </div>
+            <div class="position-absolute start-50 translate-middle-x d-none img-offcanvas" style="bottom: 4%;">
+                <a class="d-flex header-logo" href="{{ route('home') }}" title="Página principal">
+                    <img class="w-100 h-100 object-fit-contain" src="{{ asset('front/images/logos/logo.svg') }}" alt="Logo {{ env('APP_NAME') }}">
+                </a>
+            </div>
+        </div>
+      </div>
     <x-custom-code type="body" />
 
     <header class="header w-100  isolation-isolate position-absolute w-100 top-0 start-0 w-100 py-1 py-lg-2" data-aos="zoom-out-up">
@@ -54,7 +69,7 @@
                 <div class="col-lg-7 col-6 me-auto m-lg-auto d-flex justify-content-end justify-content-lg-center">
 
                     {{-- Botão mobile --}}
-                    <button class="d-lg-none btn btn-outline-light p-0-50 p-sm-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
+                    <button class="d-lg-none btn btn-outline-light p-0-50 p-sm-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <svg class="w-1-50 h-1-50" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white">
                             <path stroke-linecap="white" stroke-linejoin="white" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
@@ -99,7 +114,7 @@
                 <div class="col-lg-7 col-6 me-auto m-lg-auto d-flex justify-content-end justify-content-lg-center">
 
                     {{-- Botão mobile --}}
-                    <button class="d-lg-none btn btn-outline-light p-0-50 p-sm-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
+                    <button class="d-lg-none btn btn-outline-light p-0-50 p-sm-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <svg class="w-1-50 h-1-50" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white">
                             <path stroke-linecap="white" stroke-linejoin="white" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
