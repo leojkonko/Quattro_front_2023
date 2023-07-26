@@ -14,3 +14,47 @@
 
 // NÃO remover linha abaixo \/
 // #Imports
+
+
+.select2-selection__rendered {
+    margin: 0 !important;
+    max-width: 80% !important;
+    overflow: hidden !important;
+    display: flex !important;
+
+    li {
+        margin-top: 0px !important;
+        //display: none !important;
+        background: $secondary !important;
+        color: white !important;
+        padding: 0px 4px !important;
+        border: none !important;
+
+        &:first-child {
+            display: flex !important;
+            //width: max-content;
+        }
+
+        button {
+            display: none !important;
+        }
+    }
+}
+
+.select2-selection {
+    display: flex !important;
+}
+
+.select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: $secondary !important;
+}
+
+.select2-container--default .select2-results__option--selected {
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7' /%3E%3C/svg%3E");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+}

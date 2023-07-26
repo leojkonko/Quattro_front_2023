@@ -1,14 +1,14 @@
 <footer id="footer" class="overflow-hidden bg-light" style="background-image: url({{ asset('front/images/backgrounds/footer.png') }})">
-    <div class="container position-relative z-index-1">
+    <div class="container position-relative z-index-1" data-aos="fade-left">
         <div class="w-100 h-100 position-absolute start-0 top-0" style="background: rgba(32, 32, 32, 0.9);
         backdrop-filter: blur(45px);"></div> 
         <div class="row gy-2 gy-lg-0 text-center text-lg-start align-items-center justify-content-between pt-2 pt-lg-4 position-relative">
-            <div class="col-lg-3 d-flex justify-content-center" data-aos="fade-left">
+            <div class="col-lg-3 d-flex justify-content-center">
                 <a href="{{ route_lang('home') }}" class="d-block m-auto m-lg-0">
                     <img class="" width="216px" src="{{ asset('front/images/logos/logo.svg') }}" title="Página principal" alt="Logo {{ env('APP_NAME') }}">
                 </a>
             </div>
-            <div class="col-lg-2 d-flex justify-content-center mt-2 mt-lg-0" data-aos="fade-left">
+            <div class="col-lg-2 d-flex justify-content-center mt-2 mt-lg-0">
                 <div>
                     <h2 class="fs-20 fw-600 text-white w-100 text-lg-start text-center">Menus</h2>
                     <nav class="menu">
@@ -34,7 +34,7 @@
                     </nav>
                 </div>
             </div>
-            <div class="col-lg-4 d-flex justify-content-center mt-3 mt-lg-0" data-aos="fade-right">
+            <div class="col-lg-4 d-flex justify-content-center mt-3 mt-lg-0">
                 <div> 
                     <h2 class="fs-20 fw-600 text-white w-100 text-lg-start text-center">Contato</h2>
                     <ul class="list-unstyled">
@@ -55,7 +55,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 d-flex justify-content-center" data-aos="fade-right">
+            <div class="col-lg-3 d-flex justify-content-center">
                 <ul class="list-unstyled d-flex gap-1 d-lg-block"> 
                     <li class="mt-1">
                         <a target="_blank" href="" class="fs-16 fw-400 text-decoration-none text-white svg-footer btn btn-outline-light rounded-0" style="padding: 15px;">

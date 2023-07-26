@@ -1,7 +1,7 @@
 @extends('front.layout.app')
 
 @section('content')
-    <main id="empresa" class="row gx-0 gy-2 gy-lg-4 py-lg-4 py-2 overflow-hidden z-index-background" style="background: #f5f5f5">
+    <main id="empresa" class="row gx-0 gy-2 gy-lg-4 py-lg-4 py-2 overflow-hidden" style="background: #f5f5f5">
         <div class="position-absolute top-0 start-0" id="infos"></div>
         <section class="">
             <div class="container">
@@ -85,8 +85,8 @@
                                                 </div>
                                                 <div class="gap-1 mt-2">
                                                     <a href="{{ route_lang('products') }}">
-                                                        <button class="btn btn-dark fs-16 fw-400 rounded-0 w-100">
-                                                            Fale com um corretor
+                                                        <button class="btn btn-dark fs-16 fw-400 rounded-0 w-100 d-flex justify-content-center">
+                                                            <span class="d-none d-sm-block">Fale com um</span> corretor
                                                         </button>
                                                     </a>
                                                     <button id="comprar" class="btn fs-16 fw-400 rounded-0 w-100 d-flex justify-content-center text-decoration-underline">

@@ -3,9 +3,9 @@
 @extends('front.layout.app')
 
 @section('content')
-    <main id="contato" class="position-relative z-index-3">
+    <main id="contato" class="position-relative z-index-3 overflow-hidden">
         <div class="position-absolute top-0 start-0" id="infos"></div>
-        <section class="bg-dark py-2 py-lg-4">
+        <section class="bg-dark py-2 py-lg-4 overflow-hidden">
             <div class="container">
                 <ul class="mb-0 list-unstyled p-0 row g-1 contacts">
                         <li class="col-lg-4 bg-dark address" data-aos="zoom-out-up">
@@ -69,9 +69,9 @@
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6" data-aos="fade-right">
-                        <div class="ratio ratio-1x1 h-100">
+                        <a href="{{ asset("front/images/backgrounds/contato.png") }}" data-fancybox="gallery" class="ratio ratio-1x1 h-100">
                             <img class="w-100 h-100 object-fit-cover" src="{{ asset("front/images/backgrounds/contato.png") }}" alt="" title="">
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

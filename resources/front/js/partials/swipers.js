@@ -5,16 +5,16 @@
  */
 
 new Swiper(".banner-swiper", {
-    /*autoplay: {
+    autoplay: {
         delay: 7500,
         disableOnInteraction: false,
-    },*/
+    },
     //rewind: false,
     effect: "fade",
     direction: "vertical",
     navigation: {
-        nextEl: ".banner-swiper .swiper-button-next",
-        prevEl: ".banner-swiper .swiper-button-prev",
+        prevEl: ".banner-swiper .swiper-button-next",
+        nextEl: ".banner-swiper .swiper-button-prev",
     },
     pagination: {
         el: ".banner-swiper .swiper-pagination",
@@ -43,8 +43,8 @@ new Swiper(".imoveis-internos-swiper", {
     slidesPerView: 1,
     spaceBetween: 1,
     navigation: {
-        nextEl: ".imoveis-internos-swiper .imoveis-internos-button",
-        prevEl: ".imoveis-internos-swiper .imoveis-internos-button2",
+        prevEl: ".imoveis-internos-swiper .imoveis-internos-button",
+        nextEl: ".imoveis-internos-swiper .imoveis-internos-button2",
     },
     pagination: {
         el: ".imoveis-internos-swiper .swiper-pagination",

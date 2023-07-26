@@ -67,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section>   
+        <section style="    margin-top: -2px;">   
             <div class="row g-0">
                 <div class="locacoes-swiper swiper">
                     <div class="swiper-wrapper mb-4">
